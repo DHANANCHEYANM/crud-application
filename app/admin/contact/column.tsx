@@ -132,7 +132,7 @@ function ActionsCell({
     };
 
     return (
-        <div className="flex items-center gap-2">
+             <div className="container mx-auto pt-2">
             <Dialog>
                 <DialogTrigger asChild>
                     <Button
@@ -143,7 +143,7 @@ function ActionsCell({
                     </Button>
                 </DialogTrigger>
 
-                <DialogContent>
+                <DialogContent className="sm:max-w-[650px] bg-white text-black">
                     <DialogHeader>
                         <DialogTitle>
                             Edit Contact
@@ -184,7 +184,7 @@ function ActionsCell({
                             value={status}
                             onValueChange={setStatus}
                         >
-                            <SelectTrigger>
+                            <SelectTrigger >
                                 <SelectValue placeholder="Select Status" />
                             </SelectTrigger>
 
@@ -233,14 +233,14 @@ function ActionsCell({
                     </Button>
                 </AlertDialogTrigger>
 
-                <AlertDialogContent>
+                <AlertDialogContent className="sm:max-w-[650px] bg-white text-black">
                     <AlertDialogHeader>
                         <AlertDialogTitle>
                             Delete Contact?
                         </AlertDialogTitle>
 
                         <AlertDialogDescription>
-                            This action cannot be undone.
+                           Are you sure you want to delete this contact?
                         </AlertDialogDescription>
                     </AlertDialogHeader>
 

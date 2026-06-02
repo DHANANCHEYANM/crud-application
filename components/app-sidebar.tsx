@@ -50,7 +50,7 @@ const data = {
   navMain: [
     {
       title: "Contact",
-      url: "/contact",
+      url: "/admin/contact",
       icon: <BookOpenIcon />,
       isActive: true,
 
@@ -58,12 +58,12 @@ const data = {
         
         {
           title: "dashboard",
-          url: "/dashboard",
+          url: "/admin/dashboard",
           icon:<Contact2Icon/>
         },
         {
           title: "Contact",
-          url: "/contact",
+          url: "/admin/contact",
           icon:<Contact2Icon/>
         },
       ],

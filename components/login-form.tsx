@@ -148,7 +148,7 @@ export function LoginForm({
         "Login successful"
       );
 
-      router.replace("/dashboard");
+      router.replace("/admin");
 
     } catch (error: any) {
       console.error(

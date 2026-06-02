@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
-import { contacts } from "@/db/schema/contact-schema";
+import { contacts } from "@/db/schema";
+
 
 export async function GET() {
   try {

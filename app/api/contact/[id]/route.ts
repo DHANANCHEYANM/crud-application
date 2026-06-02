@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
-import { contacts } from "@/db/schema/contact-schema";
+
 import { eq } from "drizzle-orm";
+import { contacts } from "@/db/schema";
 
 export async function PUT(
   req: Request,
